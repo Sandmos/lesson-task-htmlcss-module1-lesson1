@@ -1,0 +1,87 @@
+body,
+html {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.my-header {
+    display: block;
+    background-color: #202020;
+    height: 48px;
+}
+.my-header .logo{
+    display: inline-block;
+    color: #fff;
+    font-weight: 800;
+    border: 1px solid green;
+}
+
+.navigation{
+    display: inline-block;
+    border: 1px solid green;
+    background-color: transparent;
+}
+.navigation ul{
+    list-style: none;
+    
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 25px;
+    
+}
+.navigation ul li {
+    display: inline-block;
+}
+
+
+.hero-banner{
+    background-color: aqua;
+    background-image: url('/img/guitar-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 420px;
+   
+}
+
+.inner {
+    width: 1080;
+    margin: 0 auto;
+    
+    border: 1px solid red;
+}
+.our-guitars {
+    background-color:rgb(247, 247, 247);
+    background-image:  url("/img/guitar-2.png");
+    background-size: contain;
+    background-position: 800px;
+    background-repeat: no-repeat;
+    height: 100px;
+    padding: 10px;
+    
+}
+
+.our-guitars ul li {
+   margin: 0;
+   height: 20px;
+}
+
+/* margin: t0 R0 B0 L0;
+   margin: Top Right Bottom Left;
+*/
+.footer {
+    background-color: rgb(88, 184, 160);
+    position: absolute;
+    bottom: -1000px;
+    width: 100%;
+    height: 5%;
+    
+}
+
+
