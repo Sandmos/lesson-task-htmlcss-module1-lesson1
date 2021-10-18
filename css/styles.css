@@ -7,6 +7,13 @@ html {
     padding: 0;
 }
 
+/*ID: has the highest specificity, it always wins
+only way to over ride it is by writing inline styles
+ (not advisable)*/
+#my-header {
+    background-color: rgb(241, 71, 71);
+}
+
 .my-header {
     display: block;
     background-color: #202020;
@@ -35,6 +42,12 @@ html {
     margin-right: 25px;
     
 }
+/* direct descendant of .navigation*/
+.navigation > a{
+    color: blue;
+    border: 1px dotted green;
+    padding: 10px;
+}
 .navigation ul li {
     display: inline-block;
 }
@@ -42,11 +55,11 @@ html {
 
 .hero-banner{
     background-color: aqua;
-    background-image: url('/img/guitar-1.png');
+    background-image: url("/img/guitar-1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 420px;
+    height: 220px;
    
 }
 
@@ -54,23 +67,38 @@ html {
     width: 1080;
     margin: 0 auto;
     
-    border: 1px solid red;
+    border: 1px solid rgb(224, 131, 131);
 }
 .our-guitars {
-    background-color:rgb(247, 247, 247);
-    background-image:  url("/img/guitar-2.png");
-    background-size: contain;
-    background-position: 800px;
-    background-repeat: no-repeat;
     height: 100px;
-    padding: 10px;
-    
+
 }
 
 .our-guitars ul li {
-   margin: 0;
-   height: 20px;
+   margin: 8px;
+   
 }
+
+img {
+   max-width: 1024;
+   padding: 0%;
+   border-radius: 50px;
+   display: inline-block;  
+}
+
+.image-3{
+    float: center;
+}
+
+.text {
+    text-align: left;
+    display: block;
+    padding: 0%;
+    
+}
+
+
+    
 
 /* margin: t0 R0 B0 L0;
    margin: Top Right Bottom Left;
@@ -84,4 +112,20 @@ html {
     
 }
 
+body#home-page {
+    background-color: rgb(255, 255, 255);
+}
+
+body#home-page h1 {
+    color:royalblue
+}
+
+
+body#guitar-page {
+    background:rgb(255, 255, 255);
+}
+
+body#guitar-page h1 {
+    color:rgb(255, 255, 255)
+}
 
